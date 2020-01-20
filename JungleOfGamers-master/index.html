@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>index</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+	<body>
+		<div class="body">
+			<div class="header-container">
+				<div class="header">
+					<header>
+						<h1>JUNGEL OF GAMERS</h1>
+						<!-- <img src="D:\pubH1>g\images\logo1.png" alt="logo" width="250" height="100">	 -->
+						<nav>
+							<ul>
+								<li><a href="index.html" alt="index page">Home</a></li>
+								<li><a href="#">Contact</a></li>
+								<li><a href="#">About</a></li>
+								<li><a href="#" >Terms</a></li>
+								<li><a href="#" class="lrm"> Login/Register</a></li>
+							</ul>
+						</nav>
+						<div class="clear"></div>
+					</header>
+				</div><!-- end pf .header -->
+			</div><!-- end of .header-container -->
+			<div class="main">
+				<div class="terms">
+					<h1>Terms & Conditions</h1><hr>
+					<pre>
+<p>1. Entry fees is for individual person and not for whole squad.<br>
+2. No hackers are allowed if we found anyone it leads to direct disqualification.<br>
+3. Only Asian server<br>
+4. You should collect your room id before 5 minutes of match start time.<br> 
+5.If any way you fail to join the room on time there will be no refund given to you.<br>
+6. Offense language is not allowed.<br>
+7.Team up are not allowed which is against the game rules if we found doing this you will be 
+  dissqualified.<br>
+8. The chicken dinner prize is only for #1.<br> 
+9. Your account will be blocked and no refund will be given if you not follow our rules and regulations.</p>
+					</pre>
+				</div><!-- end of .terms -->
+				<div class="terms">
+					<h1>Contact Us</h1><hr>
+					<h3>Pinkey Internet</h3>
+					<p>Pinkey INTERNET is a one of leading Internet Service Provider offering high quality(Speed) broadband services with low cost, located at Malad, Mumbai - 400095.
+</p>
+					<div class="contact-form">
+				<form method="post" action="table">
+					<table> 
+						<tr>
+							<td>Name:</td>
+							<td><input type="name" name="name" placeholder="enter name...." required="required" maxlength="25"><br></td>
+						</tr>
+						<tr>
+							<td>Email id:</td>
+							<td><input type="email" name="email" placeholder="enter email id...." size="10" required="required"></td>
+						</tr>
+						</table>
+							</form>
+							</div><!-- end of contact-form>
+				</div><!-- end of .terms -->
+				<div class="terms">
+					<h1>Terms & Conditions</h1><hr>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere fugiat magnam excepturi explicabo odio accusamus sint consequatur rem dolores a deleniti in laboriosam unde deserunt, sequi nostrum ratione quasi, beatae numquam dolorum, cupiditate doloremque ab. Voluptatibus, similique asperiores eaque fugiat labore commodi ab vero, exercitationem, pariatur earum voluptatem! Voluptatem, vero.</p>
+				</div><!-- end of .terms -->
+			</div><!-- end of .mai n -->
+		</div><!-- end of .bpdy -->
+
+
+	<div class="popup-background">
+		<div class="popup">
+			<h1 class="popup-heading">Register</h1>
+			<form action="user.html" method="POST" class="register" id="register" >
+				<div class="form-group">
+					<label for="">Name: </label>
+					<input type="text" name="name" placeholder="Enter Name......." required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Pubg Username: </label>
+					<input type="text" name="pubgusername" placeholder="Enter Pubg Username......" required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Team Name: </label>
+					<input type="text" name="teamname" placeholder="Enter Team Name......" required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Mobile No: </label>
+					<input type="text" name="mobile" placeholder="Enter Mobile Number......" required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Email Id: </label>
+					<input type="email" name="email" placeholder="Enter Email Id........."required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Password: </label>
+					<input type="password" name="pass" placeholder="Enter Password......." required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Confirm Password: </label>
+					<input type="password" name="repass" placeholder="Enter Password Again......" required="required">
+				</div>
+				<button type="submit" class="btn-register">Register	</button>
+				<a href="#" class="alogin">Already A Member? Login</a>
+			</form>
+			<form action="user.html" method="POST" class="login" id="login">
+				<div class="form-group">
+					<label for="">Pubg Username: </label>
+					<input type="text" name="pubgusername" placeholder="Enter Pubg Username......" required="required">
+				</div>
+				<div class="form-group">
+					<label for="">Password: </label>
+					<input type="password" name="pass" placeholder="Enter Password......." required="required">
+				</div>
+				<button type="submit" class="btn-login">Login	</button>
+				<a href="#" class="aregister">New Here? Register</a>
+			</form>
+		</div><!-- end of popup -->
+		<div class="popup-exit">X</div>
+	</div><!-- Ebd of popup nackground -->
+
+
+
+
+<script>
+	
+	var login = document.querySelector('#login');
+	var loginbtn = document.querySelectorAll('.alogin')[0];
+	var pheading = document.querySelectorAll('.popup-heading')[0];
+	var register = document.querySelector('#register');
+	var registerbtn = document.querySelectorAll('.aregister')[0];
+	var popupexit = document.querySelectorAll('.popup-exit')[0];
+	var popupbg = document.querySelectorAll('.popup-background')[0];
+	var lrm = document.querySelectorAll('.lrm')[0];
+	loginbtn.addEventListener('click', function(e) {
+		login.style.display = 'block';
+		register.style.display = 'none';
+		pheading.innerHTML = 'Login';
+		e.preventDefaults();
+	});
+	registerbtn.addEventListener('click', function(e) {
+		register.style.display = 'block';
+		login.style.display = 'none';
+		pheading.innerHTML = 'Register';
+		e.preventDefaults();
+	});
+
+
+	popupexit.addEventListener('click',function(e) {
+
+		popupbg.style.display = 'none';
+	});
+	lrm.addEventListener('click',function(e) {
+
+		popupbg.style.display = 'block';
+		e.preventDefaults();
+	});
+
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+</body>
+</html>		
